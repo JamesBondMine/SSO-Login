@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="005.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZT-fu-h6D">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.0" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDK-DY-kBr">
+                                <rect key="frame" x="0.0" y="608" width="375" height="63"/>
+                                <color key="backgroundColor" red="1" green="0.1524051713" blue="0.047284784589999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Dxt-4s-2Xd"/>
+                                </constraints>
+                                <state key="normal" title="点击跳转app2">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iJw-WJ-dpP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xZT-fu-h6D" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="C4f-sD-sVl"/>
+                            <constraint firstItem="IDK-DY-kBr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="K77-z3-W2X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IDK-DY-kBr" secondAttribute="trailing" constant="-16" id="SC3-96-ec5"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IDK-DY-kBr" secondAttribute="bottom" constant="-4" id="b0Z-SU-2IW"/>
+                            <constraint firstItem="xZT-fu-h6D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="c5F-SX-L3k"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xZT-fu-h6D" secondAttribute="bottom" id="h3a-SR-5UH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xZT-fu-h6D" secondAttribute="trailing" constant="-16" id="yDf-9v-E6s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="005.png" width="320" height="568"/>
+    </resources>
+</document>
